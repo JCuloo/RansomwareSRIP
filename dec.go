@@ -9,6 +9,7 @@ import (
     "os"
     "path/filepath"
     "strings"
+    "time"
 )
 
 const aes_key = "12345678123456781234567812345678"
@@ -82,4 +83,5 @@ func main() {
         return
     }
     sendLog("Dekripcija zavrsena. Fajlovi vraceni.")
+    time.Sleep(1*time.Second)
 }
